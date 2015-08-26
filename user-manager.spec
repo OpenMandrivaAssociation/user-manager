@@ -29,4 +29,8 @@ Plasma user manager.
 %install
 %ninja_install -C build
 
-%files
+%find_lang user_manager
+
+%files -f user_manager.lang
+%{_libdir}/qt5/plugins/user_manager.so
+%{_datadir}/kservices5/user_manager.desktop
