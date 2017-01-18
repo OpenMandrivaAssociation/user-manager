@@ -15,6 +15,7 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(pwquality)
+Requires:	pam_pwquality
 
 %description
 Plasma user manager.
