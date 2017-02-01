@@ -10,7 +10,7 @@ Url: 		http://kde.org/
 License: 	GPL
 Group: 		System/Libraries
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
