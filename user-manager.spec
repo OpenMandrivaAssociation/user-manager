@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(pwquality)
 Requires:	pam_pwquality
+Requires:	desktop-common-data
 
 %description
 Plasma user manager.
@@ -29,6 +30,9 @@ Plasma user manager.
 
 %install
 %ninja_install -C build
+
+# (tpg) use our own faces, and put them on top of the list, so this explain afaces name :)
+ln -sf /usr/share/mdk/faces %{buildroot}%{_datadir}/user-manager/afaces
 
 %find_lang user_manager || touch user_manager.lang
 
