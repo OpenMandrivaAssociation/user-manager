@@ -3,7 +3,7 @@
 
 Summary: 	Plasma user manager
 Name: 		user-manager
-Version: 	5.12.3
+Version: 	5.12.90
 Release: 	1
 Source0: 	http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Url: 		http://kde.org/
@@ -15,6 +15,7 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(pwquality)
+BuildRequires:	pkgconfig(libxcrypt)
 Requires:	pam_pwquality
 Requires:	desktop-common-data
 
