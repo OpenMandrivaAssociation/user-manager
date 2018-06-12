@@ -17,6 +17,7 @@ BuildRequires:	pkgconfig(Qt5DBus)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(pwquality)
 BuildRequires:	pkgconfig(libxcrypt)
+Requires:	accountsservice
 Requires:	pam_pwquality
 Requires:	desktop-common-data
 
