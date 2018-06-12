@@ -12,6 +12,8 @@ Group: 		System/Libraries
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5IconThemes)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5DBus)
 BuildRequires:	pkgconfig(Qt5Widgets)
