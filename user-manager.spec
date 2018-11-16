@@ -3,8 +3,8 @@
 
 Summary: 	Plasma user manager
 Name: 		user-manager
-Version: 	5.14.2
-Release: 	2
+Version: 	5.14.3
+Release: 	1
 Source0: 	http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Url: 		http://kde.org/
 License: 	GPL
