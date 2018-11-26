@@ -1,4 +1,5 @@
 removed_sources:
   user-manager-5.12.3.tar.xz: c837a73da8fc6863781013db8631570cd04cb5b7
-sources:
   user-manager-5.12.6.tar.xz: 5a3c2cbd078c7d8bb4f7f544165913cd4f357871
+sources:
+  user-manager-5.12.7.tar.xz: e11118ec046d09ea115e7c6151dba785772f678b
