@@ -4,7 +4,7 @@
 Summary: 	Plasma user manager
 Name: 		user-manager
 Version: 	5.15.5
-Release: 	1
+Release: 	2
 Source0: 	http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Url: 		http://kde.org/
 License: 	GPL
@@ -37,7 +37,7 @@ Plasma user manager.
 %ninja_install -C build
 
 # (tpg) use our own faces, and put them on top of the list, so this explain afaces name :)
-ln -sf /usr/share/mdk/faces %{buildroot}%{_datadir}/user-manager/afaces
+ln -sf /usr/share/mdk/faces %{buildroot}%{_datadir}/user-manager/avatars/afaces
 
 %find_lang user_manager || touch user_manager.lang
 
