@@ -3,7 +3,7 @@
 
 Summary: 	Plasma user manager
 Name: 		user-manager
-Version:	5.16.5
+Version:	5.16.90
 Release: 	1
 Source0: 	http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Url: 		http://kde.org/
@@ -42,7 +42,7 @@ ln -sf /usr/share/mdk/faces %{buildroot}%{_datadir}/user-manager/avatars/afaces
 %find_lang user_manager || touch user_manager.lang
 
 %files -f user_manager.lang
-%{_sysconfdir}/xdg/user-manager.categories
+%{_datadir}/qlogging-categories5/user-manager.categories
 %{_libdir}/qt5/plugins/user_manager.so
 %{_datadir}/kservices5/user_manager.desktop
 %{_datadir}/user-manager
