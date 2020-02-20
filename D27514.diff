@@ -1,0 +1,35 @@
+diff --git a/src/lib/accountmodel.cpp b/src/lib/accountmodel.cpp
+--- a/src/lib/accountmodel.cpp
++++ b/src/lib/accountmodel.cpp
+@@ -136,12 +136,14 @@
+     }
+ 
+     switch(role) {
+-        case Qt::DisplayRole || AccountModel::FriendlyName:
++        case Qt::DisplayRole:
++        // add case AccountModel::FriendlyName: if AccountModel::FriendlyName gets its own value
+             if (!acc->realName().isEmpty()) {
+                 return acc->realName();
+             }
+             return acc->userName();
+-        case Qt::DecorationRole || AccountModel::Face:
++        case Qt::DecorationRole:
++        // add case AccountModel::Face: if AccountModel::Face gets its own value
+         {
+             QFile file(acc->iconFile());
+             int size = QApplication::style()->pixelMetric(QStyle::PM_LargeIconSize);
+@@ -293,9 +295,11 @@
+ QVariant AccountModel::newUserData(int role) const
+ {
+     switch(role) {
+-        case Qt::DisplayRole || AccountModel::FriendlyName:
++        case Qt::DisplayRole:
++        // add case AccountModel::FriendlyName: if it ever gets its own value
+             return i18n("New User");
+-        case Qt::DecorationRole || AccountModel::Face:
++        case Qt::DecorationRole:
++        // add case AccountModel::Face: if it ever gets its own value
+             return QIcon::fromTheme(QStringLiteral("list-add-user"));
+         case AccountModel::Created:
+             return false;
+
