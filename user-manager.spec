@@ -4,7 +4,7 @@
 Summary: 	Plasma user manager
 Name: 		user-manager
 Version:	5.19.5
-Release:	4
+Release:	5
 Source0: 	http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 # https://phabricator.kde.org/D27514
 Patch0:		https://phabricator.kde.org/file/data/day64xchqj7rmddc4b67/PHID-FILE-yopf3tvm56hlmgzlysmx/D27514.diff
